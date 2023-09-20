@@ -1,0 +1,232 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    scrollbar-color: #3F3129;
+    background-size: cover;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+   }
+@font-face {
+    font-family: 'Intro';
+    src: url(fonts/introrust-base.otf);
+}
+mark{
+    background-color: var(--brown);
+}
+:root{
+--green: #338937;
+--blue: #213F8A;
+}
+.container{
+    background-position: center;
+    background-size: cover;
+    padding: 0px;
+    margin: 0px;
+    height: 600vh;
+    display: grid;  
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.16fr 0.84fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+    "nav"
+    "intro"
+    "about"
+    "roadmap1"
+    "roadmap2"
+    "tokenomics"
+    "footer";
+    background-color: #D9D9D9;
+    background-image: url(images/jewpepe-bg.png);
+    font-family: 'Intro';
+}
+#contract-text{
+color: transparent;
+}
+nav p{
+    font-family: 'Intro';
+}
+nav{
+    width: 100%;
+    top: 0%;
+    grid-area: nav;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    gap: 2%;
+    margin-top: 1%;
+    padding-right: 3%;
+}
+.nav-element{
+    display: flex;
+    justify-content: center;
+    height: auto;
+    width: 10%;
+}
+.nav-element p{
+    color: black;
+    font-size: 120%;
+}
+.buy-btn{
+width: 12%;
+height: 60%;
+}
+.buy-btn-img{
+    width: 100%;
+    height: 100%;
+}
+nav a{
+    text-decoration: none;
+}
+nav p{
+    font-weight: 600;
+    font-size: 110%;
+    color: white;
+}
+nav p:hover{
+color: var(--light);
+}
+#intro{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    grid-area: intro;
+    padding-bottom: 5%;
+    gap: 3%;
+}
+.chart-audio-container{
+    width: 35%;
+    height: 8%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 5%;
+}
+.chartbtn-container{
+    background-size: 80%;
+    width: 30%;
+    height: 100%;
+    background-color: var(--blue);
+    border-radius: 50px;
+    box-shadow: 0px 5px 10px 2px grey;
+    background-image: url(images/chart-txt.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 45%;
+}
+.audio-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+    height: 100%;
+    background-color: var(--blue);
+    border-radius: 50px;
+    box-shadow: 0px 5px 10px 2px grey;
+}
+.ca-container{
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 35%;
+    height: 8%;
+    background-color: var(--blue);
+    border-radius: 50px;
+    box-shadow: 0px 5px 10px 2px grey;
+    background-image: url(images/ca-txt.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 90%;
+}
+#about{
+    grid-area: about;
+}
+#roadmap1{
+    grid-area: roadmap1;
+}
+#roadmap2{
+    grid-area: roadmap2;
+}
+
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: end;
+    grid-area: footer;
+}
+.end-container{
+    margin-bottom: 6%;
+    width: 70%;
+    height: 10%;
+    display: flex;
+    flex-direction: row;
+}
+.end-nav{
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10%;
+}
+a{
+    text-decoration: none;
+}
+.end-nav p{
+    color: black;
+    font-family: 'Intro';
+}
+p:hover{
+    color: #5A965A;
+}
+.end-socials-arrow{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    width: 40%;
+    height: 100%;
+    gap: 5%;
+}
+.end-socials{
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10%;
+}
+.tg-img{
+    width: 20%;
+    height: 40%;
+    background-image: url(images/tg-img.png);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.tg-img:hover{
+    background-image: url(images/tg-img-after.png);
+}
+.tw-img{
+    width: 20%;
+    height: 40%;
+    background-image: url(images/tw-img.png);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.tw-img:hover{
+    background-image: url(images/tw-img-after.png);
+}
+.end-arrow{
+    width: 15%;
+    height: 100%;
+    background-image: url(images/arrow.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.end-arrow:hover{
+    background-image: url(images/arrow-after.png);
+}
+
+
